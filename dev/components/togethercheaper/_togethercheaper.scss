@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.together-cheaper{
+  text-align: center;
+}
+.together-cheaper-title-box {
+  display: inline-block;
+  background: #ffffff;
+  padding: 0 50px;
+  font-size: 55.01px;
+  position: relative;
+  top: 65px;
+  color: #637388;
+  font-family: $myriadbold;
+  .together-cheaper-main-title {
+    display: inline-block;
+    text-align: center;
+  }
+  .together-cheaper-title-text {
+    font-size: 22.92px;
+  }
+  .gift-box-icon {
+    display: inline-block;
+    content: url("../img/gift_box.png");
+    width: 77px;
+    height: 87px;
+    background-repeat: no-repeat;
+    background-size: 77px 87px;
+  }
+}
+.together-cheaper-line {
+  height: 1px;
+  background-color: #0074bd;
+  display: block;
+  width: 100%;
+}
+.together-cheaper-box{
+  display: inline-block;
+  padding: 0 15px 21px 15px;
+  box-sizing: border-box;
+  border: 1px solid #637388;
+  width: 427px;
+  border-radius: 23px;
+  position: relative;
+  color: #fb0c3f;
+  font-family: $days;
+  text-transform: uppercase;
+  margin-top: 80px;
+  text-align: center;
+}
+.together-cheaper-subtitle {
+  padding: 0 45px;
+position: relative;
+  background-color: #ffffff;
+  top: -10px;
+  display: inline-block;
+  text-align: center;
+}
+.together-cheaper-good{
+  vertical-align: top;
+  display: inline-block;
+  width: 49%;
+  margin-bottom: 50px;
+}
+.goods-img-wrap{
+  height: 110px;
+  display: inline-block;
+}
+.together-cheaper-good-info {
+  font-family: $myriadreg;
+  color: #637388;
+  font-size: 12.84px;
+  text-transform: none;
+  .together-cheaper-good-name{
+    height: 30px;
+  }
+  .together-cheaper-good-discount{
+    color: #f00616;
+    font-family: $myriadbold;
+  }
+  .together-cheaper-good-size{
+    font-size: 11px;
+  }
+  .together-cheaper-good-old-price{
+    font-size: 9.78px;
+  }
+  .together-cheaper-good-price{
+    font-size: 13.75px;
+    font-family: $myriadbold;
+  }
+  .together-cheaper-good-price-red{
+    font-size: 12.84px;
+    font-family: $myriadbold;
+    color: #f00616;;
+  }
+}
+
+.together-cheaper-plus-box{
+  position: absolute;
+  left: 46%;
+  top: 105px;
+  .together-cheaper-plus {
+    border: 1px solid #0075be;
+    color: #0075be;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-family: $days;
+    font-size: 32.71px;
+    box-sizing: border-box;
+    & span{
+      position: relative;
+      bottom: 6px;
+    }
+    &:first-child{
+       margin-bottom: 110px;
+     }
+    &:nth-child(2){
+      margin-bottom: 180px;
+    }
+  }
+}
+
+.together-cheaper-buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $days;
+  button{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 130px;
+    height: 37px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .together-cheaper-total p:first-child {
+    font-size: 16px;
+  }
+  .together-cheaper-total p:last-child {
+    font-size: 12px;
+    color: rgba(99, 115, 136, 0.702);
+  }
+  .together-cheaper-btn-buy-installment {
+    background: #8bc0d6 ;
+    font-size: 7.87px;
+  }
+  .together-cheaper-btn-buy {
+    background: #f00616;
+    font-size: 9.17px;
+    text-transform: uppercase;
+  }
+}
