@@ -1,0 +1,39 @@
+.goods-feedback {
+  .goods-title-box-wrap{
+    margin-bottom: 0;
+  }
+  .goods-feedbacks-title-icon {
+    width: 36px;
+    height: 32px;
+    background-image: url("img/goodsfeedbacksicon.png");
+    background-size: 36px 32px;
+  }
+  .goods-feedbacks-count {
+    border-bottom: 1px solid #9da7b4;
+    line-height: 13px;
+    font-size: 12.16px;
+    vertical-align: top;
+  }
+  .goods-feedbacks-stars-box{
+    position: absolute;
+    right: 0;
+    width: 57px;
+    text-align: left;
+    bottom: 5px;
+    .goods-feedbacks-stars-icon{
+      display: inline-block;
+      background-repeat: no-repeat;
+     background-image: url("img/goodsstaricon.png");
+      width: 9px;
+      height: 9px;
+      background-size: 9px 9px;
+    }
+  }
+  .feedback-info{
+    text-align: right;
+    margin-bottom: 5px;
+  }
+  .feedback-author{
+    margin-right: 10px;
+  }
+}

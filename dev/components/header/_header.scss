@@ -1,0 +1,26 @@
+/*header styles starts*/
+
+.header {
+  display: none;
+  @include media($width-mid) {
+    display: block;
+    font-family: 'PragmaticaBook-Reg', sans-serif;
+    font-size: 11.33px;
+    color: #6d7c90;
+    position: relative;
+    padding-bottom: 6px;
+    margin-bottom: 0;
+    border-color: #0075be;
+    padding-top: 20px;
+  }
+  @include media($width-max) {
+   font-size: 14px;
+  }
+  .wrap {
+    @include media($width-mid) {
+      display: flex;
+    }
+  }
+}
+
+/*header end*/

@@ -1,0 +1,199 @@
+/*goods menu styles starts*/
+
+.goods-menu {
+  display: none;
+  font-family: 'Days', sans-serif;
+  font-size: 10.53px;
+  align-self: center;
+  @include media($width-mid) {
+    display: inline-block;
+  }
+  @include media($width-max) {
+    font-size: 13px;
+  }
+  .goods-menu-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+    a {
+      cursor: pointer;
+      display: inline-block;
+    }
+    & a:hover {
+      color: #0075be;
+    }
+    &:nth-child(5) {
+      margin-right: 28px;
+      @include media($width-max) {
+        margin-right: 36px;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    @include media($width-max) {
+      margin-right: 30px;
+    }
+  }
+  .goods-menu-dropdown {
+    width: 100%;
+    height: 170px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 21px;
+    padding-top: 29px;
+    z-index: 2;
+    @include media($width-max) {
+      top: 25px;
+      padding-top: 25px;
+    }
+  }
+  .goods-menu-arrowup-box {
+    display: none;
+    position: relative;
+  }
+  .goods-menu-arrowup {
+    background-color: white;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 20px;
+    left: 43%;
+    z-index: 0;
+    border-left: 1px solid #0075be;
+    border-top: 1px solid #0075be;
+    transform: rotate(45deg);
+    @include media($width-max) {
+      top: 29px;
+    }
+  }
+  //.goods-menu-item:hover .goods-menu-arrowup-box {
+  //  display: block;
+  //}
+  .goods-menu-dropdown-active {
+    display: block;
+  }
+  .goods-menu-dropdown-menu {
+    display: inline-block;
+    width: 49%;
+  }
+  .goods-menu-dropdown-item {
+    margin-bottom: 20px;
+    width: 32%;
+    color: #6d7c90;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    font-family: "Days";
+    &:last-child {
+      margin-right: 0;
+    }
+    & a:hover {
+      color: #0075be;
+    }
+  }
+  .goods-menu-dropdown-item ul {
+    padding-top: 30px;
+  }
+
+  .goods-menu-dropdown-subitem {
+    color: #6d7c90;
+    font-family: "PragmaticaBook-Reg";
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 17px;
+    & a:hover {
+      color: #0075be;
+    }
+  }
+  .goods-menu-dropdown-subitem a:hover {
+    color: #0075be;
+  }
+  .goods-menu-dropdown-subitem:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*stock counter sections starts*/
+
+.section-stock-counterdown {
+  position: absolute;
+  width: 100%;
+  height: 189px;
+  bottom: -190px;
+  background-color: white;
+  display: none;
+  z-index: 1;
+}
+
+.dropdown-stock-counter-item {
+  width: 50%;
+  float: right;
+
+  .stock-counter-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .stock-box {
+    font-family: "Days";
+    color: #ec0541;
+    display: inline-block;
+    text-align: center;
+    .amount-discont {
+      padding-top: 34px;
+      font-size: 34px;
+      margin-bottom: 5px;
+    }
+    .discont-good {
+      font-size: 16px;
+    }
+  }
+
+  .counterdown-wrap {
+    position: relative;
+    padding-top: 8px;
+    height: 146px;
+    @include media($width-max) {
+      margin-left: 16px;
+    }
+  ;
+  }
+
+  .counterdown-text-blocks {
+    padding-top: 2px;
+    box-sizing: border-box;
+    height: 26px;
+    text-align: center;
+    width: 236px;
+    display: inline-block;
+    font-family: "Myriad Pro";
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 13px;
+
+  }
+
+  .stock-ends {
+    background-color: #b81b41;
+    margin-bottom: 14px;
+    padding-left: 27px;
+    text-align: left;
+  }
+
+  .details {
+    background-color: #4274ba;
+    font-family: 'Days';
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+}
+
+/*stock counter section starts*/
+
+/*goods menu styles ends*/

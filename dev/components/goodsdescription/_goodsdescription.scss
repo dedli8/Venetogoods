@@ -1,0 +1,44 @@
+.goods-description{
+  font-family: $pragreg;
+  color: #637388;
+  font-size: 11.35px;
+.container{
+  display: flex;
+  justify-content: space-between;
+  @include media
+  ($width-mid){
+    margin: 0 auto;
+    padding: 0 56px;
+  };
+  @include media
+  ($width-max){
+    padding: 0 56px;
+    max-width: 1570px;
+  };
+  & > *{
+    width: 280px;
+  }
+  .goods-description-icon{
+    margin-right: 12px;
+    background-repeat: no-repeat;
+  }
+}
+  .goods-description-title{
+    font-weight: bold;
+    font-size: 20.26px;
+  }
+  .goods-title-box-wrap{
+    position: relative;
+    height: 43px;
+    margin-bottom: 10px;
+  }
+  .goods-description-title-box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    & > * {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  }
+}

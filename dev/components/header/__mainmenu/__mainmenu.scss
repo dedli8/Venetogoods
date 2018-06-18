@@ -1,0 +1,23 @@
+/*main menu styles starts*/
+
+.main-menu {
+  padding: 0;
+  @include media($width-max) {
+    margin: 0;
+  }
+}
+  .main-menu-item {
+    font-size: 11.33px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 11px;
+    @include media($width-max){
+      font-size: 14px;
+      margin-right: 15px;
+    }
+  }
+  .main-menu-item:last-child {
+    margin-right: 0;
+  }
+
+/*main menu styles ends*/

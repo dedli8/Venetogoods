@@ -1,0 +1,111 @@
+@import "includes/settings";
+@import "includes/_fonts";
+@import "includes/_mixins";
+
+/*main styles*/
+
+body{
+  @include media($width-mid) {
+    margin: 0;
+  }
+}
+.header, goods-description{
+.container {
+  @include media
+  ($width-mid){
+    margin: 0 auto;
+    padding: 0 56px;
+  };
+  @include media
+($width-max){
+    padding: 0 56px;
+    max-width: 1570px;
+};
+}
+  button{
+    @include media($width-mid) {
+      outline: none;
+      border: none;
+    }
+  }
+  img {
+    @include media($width-mid) {
+      max-width: none;
+    }
+  }
+  a {
+    @include media($width-mid) {
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  ul {
+    @include media($width-mid) {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  li {
+    @include media($width-mid) {
+      list-style: none;
+    }
+  }
+  input {
+    @include media($width-mid) {
+      outline: none;
+      border: none;
+    }
+  }
+  p{
+    margin: 0;
+  }
+}
+
+/*main styles ends*/
+
+/*btnToTop styles starts*/
+
+#btn-to-top {
+  text-align: center;
+  display: none;
+  position: fixed;
+  bottom: 17px;
+  right: 68px;
+  z-index: 99;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding-bottom: 1px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #0778bf;
+  border-radius: 25px;
+  color: #0778bf;
+  font-weight: bold;
+  font-size: 17px;
+  transform: rotate(90deg);
+  background-color: transparent;
+  outline: none;
+}
+
+#btn-to-top:hover {
+  background-color: #555;
+}
+
+/*btnToTop styles ends*/
+
+
+@import "../../components/header/_header";
+@import "../../components/counterdown/counterdown";
+@import "../../components/header/__headerfirstcolumn/__headerfirstcolumn";
+@import "../../components/header/__headersecondcolumn/__headersecondcolumn";
+@import "../../components/header/__mainmenu/_mainmenu";
+@import "../../components/header/__goodsmenu/_goodsmenu";
+@import "../../components/goodsdescription/_goodsdescription";
+@import "../../components/goodsabout/_goodsabout";
+@import "../../components/goodscharacters/_goodscharacters";
+@import "../../components/goodsfeedbacks/_goodsfeedbacks";
+@import "../../components/goodstogethercheaper/_goodstogethercheaper";
+
+
+

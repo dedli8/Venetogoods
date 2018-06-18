@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="20pt" height="10pt" viewBox="0 0 20 10" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g id="#ffffffff">
+<path fill="#ffffff" opacity="1.00" d=" M 0.00 0.00 L 9.64 0.00 C 6.69 3.02 3.74 6.05 0.70 8.99 L 0.00 8.76 L 0.00 0.00 Z" />
+<path fill="#ffffff" opacity="1.00" d=" M 10.37 0.00 L 20.00 0.00 L 20.00 9.60 C 16.78 6.41 13.59 3.19 10.37 0.00 Z" />
+<path fill="#ffffff" opacity="1.00" d=" M 2.41 10.00 C 4.96 7.43 7.53 4.89 9.98 2.23 C 12.54 4.82 15.08 7.43 17.65 10.00 L 2.41 10.00 Z" />
+</g>
+<g id="#499dd3ff">
+<path fill="#499dd3" opacity="1.00" d=" M 9.64 0.00 L 10.37 0.00 C 13.59 3.19 16.78 6.41 20.00 9.60 L 20.00 10.00 L 17.65 10.00 C 15.08 7.43 12.54 4.82 9.98 2.23 C 7.53 4.89 4.96 7.43 2.41 10.00 L 0.00 10.00 L 0.00 8.76 L 0.70 8.99 C 3.74 6.05 6.69 3.02 9.64 0.00 Z" />
+</g>
+</svg>

@@ -1,0 +1,56 @@
+.grid(@name,@padding, @i: 1) when (@i =< @columns){
+    .@{name}@{i}{
+        width: 100% / @columns * @i;
+        padding: 0 @padding;
+    }
+
+    .grid(@name, @padding, @i + 1);
+}
+
+.row{
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.col{
+    float: left;
+    box-sizing: border-box!important;
+}
+
+.hide{
+    display: none;
+    &-sm{
+        @media screen and (max-width: @width-sm){
+            display: none;
+        }
+    }
+    &-md{
+        @media screen and (min-width: @width-sm) and (max-width: @width-mid){
+            display: none;
+        }
+    }
+    &-lg{
+        @media screen and (min-width: @width-max){
+            display: none;
+        }
+    }
+}
+
+.grid(sm, 0px);
+@media screen and (min-width: @width-mid){
+    .grid(md, 5px);
+}
+
+@media screen and (min-width: @width-max){
+    .grid(lg, 5px);
+}
+
+.offset-md1{
+    @media screen and (min-width: @width-sm) and (max-width: @width-mid){
+        position: relative;
+        left: 100%/12;
+    }
+}
