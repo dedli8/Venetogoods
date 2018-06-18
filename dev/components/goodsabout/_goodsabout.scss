@@ -3,4 +3,9 @@
   height: 35px;
   background-image: url("img/goodsabouticon.png");
   background-size: 31px 35px;
+  @include media($width-max){
+    width: 39px;
+    height: 43px;
+    background-size: 39px 43px;
+  }
 }

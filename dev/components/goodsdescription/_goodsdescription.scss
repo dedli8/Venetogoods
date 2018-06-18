@@ -2,6 +2,11 @@
   font-family: $pragreg;
   color: #637388;
   font-size: 11.35px;
+  text-align: justify;
+  @include media
+  ($width-max){
+   font-size: 14px;
+  };
 .container{
   display: flex;
   justify-content: space-between;
@@ -16,16 +21,22 @@
     max-width: 1570px;
   };
   & > *{
-    width: 280px;
+    width: 24%;
   }
   .goods-description-icon{
     margin-right: 12px;
     background-repeat: no-repeat;
+    @include media($width-max){
+      margin-right: 18px;
+    }
   }
 }
   .goods-description-title{
     font-weight: bold;
     font-size: 20.26px;
+    @include media($width-max){
+      font-size: 25px;
+    }
   }
   .goods-title-box-wrap{
     position: relative;
