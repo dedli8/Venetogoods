@@ -8,18 +8,25 @@
 .together-cheaper-title-box {
   display: inline-block;
   background: #ffffff;
-  padding: 0 50px;
+  padding: 0 55px;
   font-size: 55.01px;
   position: relative;
-  top: 65px;
+  top: 59px;
   color: #637388;
   font-family: $myriadbold;
+  @include media($width-max){
+    font-size: 67.87px;
+    top: 72px;
+  }
   .together-cheaper-main-title {
     display: inline-block;
     text-align: center;
   }
   .together-cheaper-title-text {
     font-size: 22.92px;
+    @include media($width-max){
+      font-size: 28.28px;
+    }
   }
   .gift-box-icon {
     display: inline-block;
@@ -28,6 +35,13 @@
     height: 87px;
     background-repeat: no-repeat;
     background-size: 77px 87px;
+    margin-right: 10px;
+    @include media($width-max){
+      width: 95px;
+      height: 107px;
+      background-size: 95px 107px;
+      margin-right: 20px;
+    }
   }
 }
 .together-cheaper-line {
@@ -35,74 +49,140 @@
   background-color: #0074bd;
   display: block;
   width: 100%;
+  margin-bottom: 60px;
+  @include media($width-max){
+    margin-bottom: 67px;
+  }
+}
+.together-cheaper-slider{
+  margin-left: -25%;
+  margin-right: -25%;
+  overflow: hidden;
 }
 .together-cheaper-box{
-  margin-right: 30px;
+  margin-top: 68px;
+  margin-right: 27px;
   display: inline-block;
-  padding: 0 15px 21px 15px;
+  padding: 0 0 21px 0;
   box-sizing: border-box;
   border: 1px solid #637388;
-  width: 427px;
-  height: 559px;
+  width: 428px;
+  //height: 559px;
   border-radius: 23px;
   position: relative;
   color: #fb0c3f;
   font-family: $days;
   text-transform: uppercase;
-  margin-top: 80px;
   text-align: center;
+  @include media($width-max){
+    margin-top: 91px;
+    width: 528px;
+    margin-right: 32px;
+  }
+}
+.together-cheaper-goods-wrap{
+  //display: grid;
+  //grid-template-columns: 183px 183px;
 }
 .together-cheaper-subtitle {
   padding: 0 45px;
 position: relative;
   background-color: #ffffff;
-  top: -10px;
+  top: -13px;
   display: inline-block;
   text-align: center;
+  font-size: 22.92px;
+  @include media($width-max){
+    font-size: 28.28px;
+    padding: 0 52px;
+    top: -18px;
+  }
 }
-.together-cheaper-good{
+.together-cheaper-good {
   vertical-align: top;
   display: inline-block;
-  width: 49%;
   margin-bottom: 50px;
-}
-.goods-img-wrap{
-  height: 110px;
-  display: inline-block;
+  margin-top: -4px;
+  width: 195px;
+  @include media($width-max){
+    margin-bottom: 63px;
+    width: 260px;
+  }
+  img {
+    height: 85px;
+    display: inline-block;
+    margin-bottom: 8px;
+    @include media($width-max){
+      height: 102px;
+      margin-bottom: 10px;
+    }
+  }
 }
 .together-cheaper-good-info {
   font-family: $myriadreg;
   color: #637388;
   font-size: 12.84px;
   text-transform: none;
+  @include media($width-max){
+    font-size: 15.84px;
+  }
   .together-cheaper-good-name{
     height: 30px;
+    width: 93%;
+    @include media($width-max){
+      height: 40px;
+    }
   }
   .together-cheaper-good-discount{
     color: #f00616;
     font-family: $myriadbold;
+    margin-bottom: 5px;
+    @include media($width-max){
+      margin-bottom: 8px;
+    }
+  }
+  .together-cheaper-size-price-box{
+    display: inline-block;
+    text-align: left;
   }
   .together-cheaper-good-size{
     font-size: 11px;
+    @include media($width-max){
+      font-size: 13.57px;
+      margin-bottom: -1px;
+    }
   }
   .together-cheaper-good-old-price{
     font-size: 9.78px;
+    @include media($width-max){
+      font-size: 12.07px;
+      margin-bottom: -4px;
+    }
   }
   .together-cheaper-good-price{
     font-size: 13.75px;
     font-family: $myriadbold;
+    @include media($width-max){
+      font-size: 16.97px;
+    }
   }
   .together-cheaper-good-price-red{
     font-size: 12.84px;
     font-family: $myriadbold;
-    color: #f00616;;
+    color: #f00616;
+    @include media($width-max){
+      font-size: 15.84px;
+    }
   }
 }
 
 .together-cheaper-plus-box{
   position: absolute;
   left: 46%;
-  top: 105px;
+  top: 107px;
+  @include media($width-max){
+    top: 134px;
+  }
   .together-cheaper-plus {
     border: 1px solid #0075be;
     color: #0075be;
@@ -112,24 +192,43 @@ position: relative;
     font-family: $days;
     font-size: 32.71px;
     box-sizing: border-box;
+    @include media($width-max){
+      width: 40px;
+      height: 40px;
+      font-size: 40.35px;
+    }
     & span{
       position: relative;
       bottom: 6px;
+      @include media($width-max){
+        bottom: 9px;
+      }
     }
     &:first-child{
-       margin-bottom: 110px;
+       margin-bottom: 113px;
+      @include media($width-max){
+        margin-bottom: 138px;
+      }
      }
     &:nth-child(2){
-      margin-bottom: 180px;
+      margin-bottom: 162px;
+      @include media($width-max){
+        margin-bottom: 199px;
+      }
     }
   }
 }
 
 .together-cheaper-buy {
+  margin-top: 4px;
+  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: $days;
+  @include media($width-max){
+    margin-top: 7px;
+  }
   button{
     outline: none;
     border: none;
@@ -138,21 +237,83 @@ position: relative;
     height: 37px;
     color: #ffffff;
     cursor: pointer;
+    @include media($width-max){
+      width: 162px;
+      height: 46px;
+    }
+  }
+  .together-cheaper-total{
+    text-align: left;
   }
   .together-cheaper-total p:first-child {
-    font-size: 16px;
+    font-size: 19px;
+    line-height: 13px;
+    @include media($width-max){
+      font-size: 25px;
+    }
+    span{
+      font-size: 11px;
+    }
   }
   .together-cheaper-total p:last-child {
-    font-size: 12px;
+    font-size: 14px;
     color: rgba(99, 115, 136, 0.702);
+    @include media($width-max){
+      font-size: 16px;
+    }
+    span{
+      font-size: 5px;
+    }
   }
   .together-cheaper-btn-buy-installment {
     background: #8bc0d6 ;
     font-size: 7.87px;
+    @include media($width-max){
+      font-size: 9.72px;
+    }
   }
   .together-cheaper-btn-buy {
     background: #f00616;
     font-size: 9.17px;
     text-transform: uppercase;
+    @include media($width-max){
+      font-size: 11.31px;
+    }
   }
 }
+.together-cheaper-slider-arr-prev,  .together-cheaper-slider-arr-next{
+  background-color: white;
+  border: 1px solid #0075be;
+  color: #0075be;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-family: $days;
+  font-size: 22.71px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 321px;
+  @include media($width-max){
+    width: 40px;
+    height: 40px;
+    top: 402px;
+    font-size: 25.71px;
+  }
+  & span {
+    position: relative;
+    bottom: 2px;
+  }
+}
+.together-cheaper-slider-arr-prev {
+  //left: 484px;
+  z-index: 1;
+  @include media($width-max){
+    //left: 600px;
+  }
+}
+  .together-cheaper-slider-arr-next{
+    //right: 484px;
+    @include media($width-max){
+      //right: 600px;
+    }
+  }

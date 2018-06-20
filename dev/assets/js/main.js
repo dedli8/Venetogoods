@@ -261,11 +261,33 @@ language.addEventListener('mouseleave', hideLanguagePanel);
 
 // language dropdown script ends
 
+// slider with arrows init
+
+function setPositionSliderArrows() {
+    let slideWidth = document.querySelector(".together-cheaper-box").offsetWidth;
+    let currentSliderWidth = document.querySelector(".together-cheaper-slider").offsetWidth;
+    let sliderArrowPrev = document.getElementsByClassName("together-cheaper-slider-arr-prev")[0];
+    let sliderArrowNext = document.getElementsByClassName("together-cheaper-slider-arr-next")[0];
+    let sliderArrowWidth = sliderArrowPrev.offsetWidth;
+    let sliderArrowPosition = currentSliderWidth/2-slideWidth/2-sliderArrowWidth/2;
+    sliderArrowPrev.style.left = sliderArrowPosition+"px";
+    sliderArrowNext.style.right = sliderArrowPosition+"px";
+}
+if(document.getElementsByClassName("together-cheaper-box").length > 2) {
 $(document).ready(function(){
-    $('.together-cheaper-slider').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        autoplay: true,
-        slidesToShow: 3
+        $('.together-cheaper-slider').slick({
+            centerMode: true,
+            slidesToShow: 1,
+            prevArrow: '<button type="button" class="together-cheaper-slider-arr-prev"><span>&#10094;</span></button>',
+            nextArrow: '<button type="button" class="together-cheaper-slider-arr-next"><span>&#10095;</span></button>',
+            variableWidth: true
+        });
+    setPositionSliderArrows();
 });
+};
+window.addEventListener('resize', function () {
+    if(document.getElementsByClassName("together-cheaper-slider-arr-prev")[0]){
+        setPositionSliderArrows();
+    }
 });
+
